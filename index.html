@@ -13,19 +13,19 @@
     </style>
     <title>Document</title>
   </head>
-  <body class="flex flex-col w-full min-h-screen relative">
+  <body class="relative flex flex-col w-full min-h-screen">
     <!-- Header -->
-    <header class="w-full sticky top-0 z-10 p-2 lg:px-18 lg:py-5">
-      <nav class="w-full flex justify-between items-center">
-        <div class="font-bold text-primary text-lg lg:text-4xl">Furniture</div>
+    <header class="sticky z-10 w-full p-2 bg-white top-0r lg:px-18 lg:py-5">
+      <nav class="flex items-center justify-between w-full">
+        <div class="text-lg font-bold text-primary lg:text-4xl">Furniture</div>
 
         <!-- Mobile menu button -->
-        <button id="mobile-menu-button" class="w-8 lg:hidden cursor-pointer">
+        <button id="mobile-menu-button" class="w-8 cursor-pointer lg:hidden">
           <img src="/assets/icons/mobile-menu-icon.svg" alt="Menu" />
         </button>
 
         <!-- Navigation links -->
-        <div class="hidden flex items-center gap-3 transition nav-items-container lg:gap-10 lg:flex">
+        <div class="flex items-center hidden gap-3 transition nav-items-container lg:gap-10 lg:flex">
           <a href="#">Home</a>
           <a href="#">Service</a>
           <a href="#">Doctors</a>
@@ -37,11 +37,77 @@
 
     <!-- Main content -->
     <main class="flex-grow">
-      <div>main content</div>
+      <!-- Hero section -->
+      <!-- @todo: return responsive this -->
+      <section class="!p-0 relative">
+        <div class="w-full">
+          <img
+            class="object-cover object-center w-full h-full"
+            src="/assets/images/hero-section-image.jpg"
+            alt="Hero"
+          />
+        </div>
+
+        <div class="absolute px-5 py-3 rounded-md right-30 top-50 bg-secondary">
+          <div class="p-3 space-y-5">
+            <h5 class="font-semibold">New Arrival</h5>
+
+            <h3 class="text-4xl font-bold text-primary">
+              Discover Our <br />
+              New Collection
+            </h3>
+
+            <p class="font-[500] max-w-[480px] leading-8">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tempora rem aspernatur ut aliquid harum!
+            </p>
+
+            <button
+              class="buy-now-btn px-8 py-4 font-bold text-white text-md border-none rounded-full bg-primary !w-[180px] cursor-pointer"
+            >
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Bar -->
+      <div id="feature-bar" class="py-5 bg-secondary lg:py-10">
+        <div class="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-around">
+          <div
+            class="flex flex-col items-center gap-3 text-center feature-bar-item md:flex-row md:items-center md:gap-6 md:text-left"
+          >
+            <img class="h-12 w-14" src="/assets/icons/delivery-icon.svg" />
+            <div>
+              <h3 class="font-bold">Free Shipping</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-3 text-center feature-bar-item md:flex-row md:items-center md:gap-6 md:text-left"
+          >
+            <img class="h-12 w-14" src="/assets/icons/return-icon.svg" />
+            <div>
+              <h3 class="font-bold">Support 24/7</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-3 text-center feature-bar-item md:flex-row md:items-center md:gap-6 md:text-left"
+          >
+            <img class="h-12 w-14" src="/assets/icons/security-icon.svg" />
+            <div>
+              <h3 class="font-bold">100% Authentic</h3>
+              <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full bg-primary text-white p-2 lg:px-18 lg:py-5">
+    <footer class="w-full p-2 text-white bg-primary lg:px-18 lg:py-5">
       <div class="grid grid-cols-6 gap-5 lg:gap-10">
         <!-- Footer left section -->
         <div class="col-span-6 lg:col-span-2">
@@ -56,10 +122,10 @@
         </div>
 
         <!-- Footer right section -->
-        <div class="footer-container col-span-6 lg:col-span-4">
+        <div class="col-span-6 footer-container lg:col-span-4">
           <h3 class="text-xl font-bold lg:text-2xl">Instagram Shop</h3>
 
-          <div class="w-full flex flex-wrap items-center gap-3 mt-2 pb-2 lg:mt-5 lg:gap-6">
+          <div class="flex flex-wrap items-center w-full gap-3 pb-2 mt-2 lg:mt-5 lg:gap-6">
             <img src="/assets/images/footer-image-1.jpg" alt="" />
             <img src="/assets/images/footer-image-2.jpg" alt="" />
             <img src="/assets/images/footer-image-3.jpg" alt="" />

@@ -25,10 +25,6 @@ body {
   font-size: 14px;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   text-decoration: none;
   color: unset;
@@ -39,6 +35,11 @@ li {
   list-style: none;
 }
 
+section {
+  padding: 60px 0px;
+}
+
+/* Header */
 .nav-items-container > a {
   font-weight: 600;
   transition: all 0.2s ease-in;
@@ -49,9 +50,25 @@ li {
   scale: 1.1;
 }
 
+/* Hero section */
+.buy-now-btn {
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-now-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 12px rgba(5, 76, 115, 0.15);
+}
+
+/* Footer */
 .footer-container > div > img {
   width: 200px;
   height: fit-content;
   object-fit: cover;
   border-radius: 5px;
+}
+
+@media only screen and (min-width: 640px) {
+  section {
+    padding: 40px 0px;
+  }
 }
