@@ -2,7 +2,6 @@
 
 :root {
   --primary-color: #054c73;
-  --secondary-color: #f2f5ff;
 
   --base-text-color: #333333;
   --base-font-family: 'Montserrat', sans-serif;
@@ -11,16 +10,19 @@
 *,
 *::backdrop,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
   scroll-behavior: smooth;
+}
+
+body {
   color: var(--base-text-color);
   font-family: var(--base-font-family);
+  background-color: #fff;
+  font-size: 14px;
 }
 
 h1,
@@ -41,4 +43,19 @@ img {
 a {
   text-decoration: none;
   color: unset;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.nav-items-container > a {
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+
+.nav-items-container > a:hover {
+  color: var(--primary-color);
+  scale: 1.1;
 }
