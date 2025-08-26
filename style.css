@@ -36,7 +36,7 @@ li {
 }
 
 section {
-  padding: 60px 0px;
+  padding: 60px 72px;
 }
 
 /* Header */
@@ -51,10 +51,10 @@ section {
 }
 
 /* Hero section */
-.buy-now-btn {
+.btn {
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buy-now-btn:active {
+.btn:active {
   transform: scale(0.95);
   box-shadow: 0 2px 12px rgba(5, 76, 115, 0.15);
 }
@@ -67,8 +67,8 @@ section {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 640px) {
   section {
-    padding: 20px 0px;
+    padding: 40px 0px;
   }
 }
