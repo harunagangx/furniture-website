@@ -79,15 +79,7 @@ section {
   background-color: var(--footer-background-color);
 }
 
-/* Footer */
-.footer-container > div > div:nth-child(2) > div > img {
-  width: 160px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 567px) {
   section {
     padding: 40px 18px;
   }
