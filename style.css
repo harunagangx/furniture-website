@@ -2,9 +2,19 @@
 
 :root {
   --primary-color: #054c73;
+  --secondary-color: #f2f5ff;
+  --footer-background-color: #03344f;
 
   --base-text-color: #333333;
+  --base-text-font-size: 14px;
   --base-font-family: 'Montserrat', sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
 }
 
 *,
@@ -21,8 +31,9 @@ body {
 body {
   color: var(--base-text-color);
   font-family: var(--base-font-family);
+  font-size: var(--base-text-font-size);
+  font-weight: var(--font-weight-400);
   background-color: #fff;
-  font-size: 14px;
 }
 
 a {
@@ -64,10 +75,14 @@ section {
   box-shadow: 0 2px 12px rgba(5, 76, 115, 0.15);
 }
 
+.footer-container {
+  background-color: var(--footer-background-color);
+}
+
 /* Footer */
-.footer-container > div > img {
-  width: 200px;
-  height: fit-content;
+.footer-container > div > div:nth-child(2) > div > img {
+  width: 160px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
