@@ -11,6 +11,13 @@
       @theme {
         --color-primary: #054c73;
         --color-secondary: #f2f5ff;
+        --color-sky-blue: #dfe9f4;
+
+        --tracking-1: 0em;
+        --tracking-2: 0.025em;
+        --tracking-3: 0.05em;
+        --tracking-4: 0.1em;
+        --tracking-5: 0.2em;
       }
     </style>
   </head>
@@ -61,7 +68,6 @@
       <!-- Main content -->
       <main class="flex-grow">
         <!-- Hero section -->
-        <!-- @todo: return responsive this -->
         <div class="relative grid grid-cols-1">
           <div class="w-full">
             <img
@@ -71,13 +77,17 @@
             />
           </div>
 
-          <div class="px-5 py-3 lg:absolute lg:rounded-md lg:right-30 lg:top-50 bg-[#DFE9F4]">
+          <div class="px-5 py-3 lg:absolute lg:rounded-md lg:right-30 lg:top-50 bg-sky-blue">
             <div class="flex flex-col items-center p-3 space-y-5 lg:items-start">
-              <h5 class="font-semibold">New Arrival</h5>
+              <h5 class="font-semibold tracking-5">New Arrival</h5>
 
-              <h3 class="text-2xl font-bold text-primary lg:text-4xl lg:max-w-[300px]">Discover Our New Collection</h3>
+              <h1
+                class="text-xl w-full text-center font-bold text-primary leading-12 lg:text-4xl lg:text-left lg:max-w-[300px]"
+              >
+                Discover Our New Collection
+              </h1>
 
-              <p class="font-[500] text-center lg:text-left lg:max-w-[480px] leading-8">
+              <p class="font-medium text-center lg:text-left lg:max-w-[480px] leading-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tempora rem aspernatur ut aliquid harum!
               </p>
 
