@@ -7,12 +7,14 @@
     <meta name="description" content="Discover our exclusive furniture collection" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #054c73;
         --color-secondary: #f2f5ff;
         --color-sky-blue: #dfe9f4;
         --color-dark-green: #09513b;
+        --color-black: #333333;
 
         --tracking-1: 0em;
         --tracking-2: 0.025em;
@@ -31,18 +33,28 @@
             <a href="#">Furniture</a>
           </div>
 
-          <!-- Mobile menu button -->
-          <button id="mobile-menu-button" class="w-8 h-8 cursor-pointer lg:hidden">
-            <img src="/assets/icons/mobile-menu-icon.svg" alt="Menu" />
-          </button>
+          <div class="flex items-center gap-4 lg:gap-10">
+            <!-- Mobile menu button -->
+            <div>
+              <button id="mobile-menu-button" class="cursor-pointer lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
 
-          <!-- Navigation links -->
-          <div class="flex items-center hidden gap-3 transition nav-items-container lg:gap-10 lg:flex">
-            <a href="#">Home</a>
-            <a href="#">Service</a>
-            <a href="#">Doctors</a>
-            <a href="#">Products</a>
-            <a href="#">Gallery</a>
+            <!-- Navigation links -->
+            <div class="flex items-center hidden gap-3 transition nav-items-container lg:gap-10 lg:flex">
+              <a href="#">Home</a>
+              <a href="#">Service</a>
+              <a href="#">Doctors</a>
+              <a href="#">Products</a>
+              <a href="#">Gallery</a>
+            </div>
+
+            <div>
+              <button id="toggle-theme" class="btn cursor-pointer">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+            </div>
           </div>
 
           <!-- Mobile sidebar -->
@@ -80,7 +92,7 @@
 
           <div class="px-5 py-3 lg:absolute lg:rounded-md lg:right-30 lg:top-50 bg-sky-blue">
             <div class="flex flex-col items-center p-3 space-y-5 lg:items-start">
-              <h5 class="font-semibold tracking-5">New Arrival</h5>
+              <h5 class="font-semibold tracking-5 text-black">New Arrival</h5>
 
               <h1
                 class="text-xl w-full text-center font-bold text-primary leading-12 lg:text-4xl lg:text-left lg:max-w-[300px]"
@@ -88,7 +100,7 @@
                 Discover Our New Collection
               </h1>
 
-              <p class="font-medium text-center lg:text-left lg:max-w-[480px] leading-8">
+              <p class="font-medium text-center text-black lg:text-left lg:max-w-[480px] leading-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tempora rem aspernatur ut aliquid harum!
               </p>
 
@@ -102,7 +114,7 @@
         </div>
 
         <!-- Feature Bar -->
-        <div id="feature-bar" class="py-5 bg-secondary lg:py-10">
+        <div id="feature-bar" class="py-5 bg-secondary lg:py-10 text-black">
           <div class="flex flex-col items-center justify-center gap-6 lg:flex-row lg:justify-around">
             <div
               class="flex items-center gap-3 text-center feature-bar-item md:flex-row md:items-center md:gap-6 md:text-left"
@@ -332,7 +344,7 @@
           >
             <input
               type="email"
-              class="flex-1 border border-gray-300 bg-white px-4 py-3 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary"
+              class="flex-1 border border-gray-300 text-black bg-white px-4 py-3 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary"
               placeholder="example@gmail.com"
               required
             />

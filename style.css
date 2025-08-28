@@ -5,7 +5,12 @@
   --secondary-color: #f2f5ff;
   --footer-background-color: #03344f;
 
+  --base-background-color: #fff;
   --base-text-color: #333333;
+
+  --dark-background-color: #0f172a;
+  --dark-text-color: #f8fafc;
+
   --base-text-font-size: 14px;
   --base-font-family: 'Montserrat', sans-serif;
 
@@ -33,7 +38,7 @@ body {
   font-family: var(--base-font-family);
   font-size: var(--base-text-font-size);
   font-weight: var(--font-weight-400);
-  background-color: #fff;
+  background-color: var(--base-background-color);
 }
 
 a {
@@ -77,6 +82,33 @@ section {
 
 .footer-container {
   background-color: var(--footer-background-color);
+}
+
+/* Dark mode */
+html.dark body {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+html.dark .footer-container {
+  background-color: var(--dark-background-color);
+}
+
+html.dark #mobile-sidebar {
+  background-color: var(--dark-background-color);
+}
+
+html.dark .nav-items-container > a,
+html.dark #mobile-sidebar > div > a {
+  color: var(--dark-text-color);
+}
+
+html.dark header {
+  background-color: var(--dark-background-color);
+}
+
+html.dark section {
+  background-color: var(--dark-background-color);
 }
 
 @media only screen and (max-width: 567px) {
